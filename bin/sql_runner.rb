@@ -17,6 +17,7 @@ class SQLRunner
 
   def execute_update_sql
     sql = File.read("lib/update.sql")
+    p sql
     @db.execute_batch(sql)
   end
 
